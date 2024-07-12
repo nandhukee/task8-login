@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Rating Form</title>
+    <style>
+      body {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .header {
+        background: #4caf50;
+        padding: 20px;
+        text-align: left;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .form-container {
+        padding: 20px;
+      }
+      .form-group {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+      .form-group label {
+        flex: 1;
+        margin-right: 10px;
+      }
+      .form-group input[type="text"] {
+        flex: 2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group .small-input {
+        flex: 0 0 30%;
+      }
+      .form-group .large-input {
+        flex: 2;
+      }
+      .form-group .medium-input {
+        flex: 0 0 60%;
+      }
+      .form-group textarea {
+        flex: 2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 100px;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+      }
+      .footer .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Bank Rating Form</h1>
+        <div>
+          <img src="https://via.placeholder.com/50" alt="Great Bank Logo" />
+          <!-- Replace with actual logo URL or path -->
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="form-group">
+          <label for="companyName">Company Name</label>
+          <input type="text" id="companyName" class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="financialInstitutionName"
+            >Financial Institution Name</label
+          >
+          <input
+            type="text"
+            id="financialInstitutionName"
+            class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="contactPerson">Company Institution Contact Person</label>
+          <input type="text" id="contactPerson" class="small-input" />
+          <input type="text" class="small-input" />
+        </div>
+        <div class="form-group">
+          <label for="financialInstitutionName2"
+            >Financial Institution Name</label
+          >
+          <input
+            type="text"
+            id="financialInstitutionName2"
+            class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="contactPhoneNumber">Contact Phone Number</label>
+          <input type="text" id="contactPhoneNumber" class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="accountHolderName">Name of Account Holder</label>
+          <input type="text" id="accountHolderName" class="small-input" />
+          <input type="text" class="small-input" />
+        </div>
+        <div class="form-group">
+          <label for="dateAccountOpened">Date Account Opened</label>
+          <input type="text" id="dateAccountOpened" class="small-input" />
+          <input type="text" class="small-input" />
+          <input type="text" class="small-input" />
+        </div>
+        <div class="form-group">
+          <label for="accountType">Account Type</label>
+          <input type="text" id="accountType" class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="balance">Balance</label>
+          <input type="text" id="balance" class="large-input" />
+        </div>
+        <div class="form-group">
+          <label for="additionalInfo">Additional Information</label>
+          <textarea id="additionalInfo"></textarea>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </body>
+</html>
